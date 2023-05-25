@@ -1,12 +1,12 @@
 john = User.create!(first_name: 'John', last_name: 'Doe', email: 'john@gmail.com', password: 'secret')
 
-Tree.create!(name: 'Apple tree', address: 'Paris', description: 'This is a beautiful apple tree', fruit_type: 'Apple', price_per_year: 10, quantity_per_year: 10, user: john)
-Tree.create!(name: 'Apricot tree', address: 'Paris', description: 'This is a beautiful apricot tree', fruit_type: 'Apricot', price_per_year: 10, quantity_per_year: 10, user: john)
-Tree.create!(name: 'Cherry tree', address: 'Paris', description: 'This is a beautiful cherry tree', fruit_type: 'Cherry', price_per_year: 10, quantity_per_year: 10, user: john)
-Tree.create!(name: 'Chestnut tree', address: 'Paris', description: 'This is a beautiful chestnut tree', fruit_type: 'Chestnut', price_per_year: 10, quantity_per_year: 10, user: john)
-Tree.create!(name: 'Coconut tree', address: 'Paris', description: 'This is a beautiful coconut tree', fruit_type: 'Coconut tree', price_per_year: 10, quantity_per_year: 10, user: john)
-Tree.create!(name: 'Fig tree', address: 'Paris', description: 'This is a beautiful fig tree', fruit_type: 'Fig', price_per_year: 10, quantity_per_year: 10, user: john)
-Tree.create!(name: 'Grapefruit tree', address: 'Paris', description: 'This is a beautiful grapefruit tree', fruit_type: 'Grapefruit', price_per_year: 10, quantity_per_year: 10, user: john)
-Tree.create!(name: 'Hazel tree', address: 'Paris', description: 'This is a beautiful hazel tree', fruit_type: 'Hazel', price_per_year: 10, quantity_per_year: 10, user: john)
+tree1 = Tree.create!(name: 'John’s apple tree', address: '20 rue des Capucins 69001 Lyon', description: 'This apple tree produces both sweet and sour apples. They will be perfect to cut a little hunger, or enjoy a juicy apple for the dessert.', price_per_year: 175, quantity_per_year: 5, fruit_type: 'Apple', user: john) 
+
+tree2 = Tree.create!(name: 'John’s cherry tree', address: '3 rue Armstrong 78002 Los Angeles', description: 'This cherry tree produces both sweet and sour cherries. They will be perfect to cut a little hunger, or enjoy a juicy cherry for the dessert.', price_per_year: 50, quantity_per_year: 2, fruit_type: 'Cherry', user: john)
+
+tree3 = Tree.create!(name: 'John’s pear tree', address: 'Impasse des Lilas 13000 Marseille', description: 'This pear tree produces both sweet and sour pears. They will be perfect to cut a little hunger, or enjoy a juicy pear for the dessert.', price_per_year: 75, quantity_per_year: 1, fruit_type: 'Pear', user: john)
+
+tree4 = Tree.create!(name: 'John’s plum tree', address: 'Route de genas 2300 Bretagne', description: 'This plum tree produces both sweet and sour plums. They will be perfect to cut a little hunger, or enjoy a juicy plum for the dessert.', price_per_year: 100, quantity_per_year: 3, fruit_type: 'Plum', user: john)
+
 
 
