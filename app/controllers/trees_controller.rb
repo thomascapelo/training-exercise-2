@@ -12,10 +12,14 @@ class TreesController < ApplicationController
         @tree = Tree.new(tree_params)
         @tree.user = current_user
         if @tree.save
-            redirect_to tree_path(@trees)
+            redirect_to tree_path(@tree)
         else
             render :new, status: :unprocessable_entity
         end
+    end
+
+    def show 
+        @tree = Tree.find(params[:id])
     end
 
     private
