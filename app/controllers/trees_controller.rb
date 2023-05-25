@@ -1,4 +1,6 @@
 class TreesController < ApplicationController
+    before_action :set_tree, only: [:show, :edit, :update]
+
 
     def index
         @trees = Tree.all
@@ -19,12 +21,23 @@ class TreesController < ApplicationController
     end
 
     def show 
-        @tree = Tree.find(params[:id])
+    end
+
+    def edit
+    end
+
+    def update
+        @tree.update(tree_params)
+        redirect_to tree_path(@tree)
     end
 
     private
 
     def tree_params
         params.require(:tree).permit(:name, :address, :description, :fruit_type, :price_per_year, :quantity_per_year)
+    end
+
+    def set_tree
+        @tree = Tree.find(params[:id])
     end
 end

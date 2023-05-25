@@ -7,6 +7,7 @@
             <p>Type of fruits: <%= tree.fruit_type %></p>
             <p>Price/year: <%= tree.price_per_year %></p>
             <p>Quantity: <%= tree.quantity_per_year %></p>
+            <p><%= link_to 'Edit', edit_tree_path(tree) %></p>
         </div>
     <% end %>
 
