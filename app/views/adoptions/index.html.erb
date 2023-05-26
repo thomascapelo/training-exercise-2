@@ -1,0 +1,12 @@
+<div class="container">
+
+    <h1>Your adoptions</h1>
+
+        <%= unless @adoptions.nil? %>
+            <%= @adopotions.each do |aodption| %>
+                <%= adoption.name %>
+            <% end %>
+            <%= else %>
+                <p>You have not adopted a tree yet.</p>
+        <% end %>
+</div>

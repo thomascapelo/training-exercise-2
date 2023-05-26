@@ -1,0 +1,10 @@
+<div class="container">
+
+    <h1>Adopt <%= @tree.name %></h1>
+
+    <%= simple_form_for [@tree, @adoption] do |f| %>
+    <%= f.input :name %>
+    <%= f.submit 'Cick to adopt' %>
+    <% end %>
+    
+</div>
